@@ -73,6 +73,7 @@ collections_config:
         comment: Dark theme color palette
       typography:
         type: object
+        label: Text
         comment: Text color palette
       button_colors:
         type: object
@@ -80,7 +81,7 @@ collections_config:
         comment: Button color palette
       background_colors:
         type: object
-        label: Backgrounds
+        label: BG
         comment: Background color palette
       code_block_colors:
         type: object
@@ -96,7 +97,7 @@ collections_config:
         comment: Focus color palette
       shortcode_colors:
         type: object
-        label: Shortcodes
+        label: Shortcode
         comment: Shortcode color palette
       scrollbar_colors:
         type: object
