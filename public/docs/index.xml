@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Getting Started on Cossidae Template</title>
+    <link>/docs/</link>
+    <description>Recent content in Getting Started on Cossidae Template</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Translating Elements</title>
+      <link>/docs/translating-elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/translating-elements/</guid>
+      <description>Elements to be translated need to have the data-rosey attribute. For example:
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1 data-rosey=&amp;#34;title&amp;#34;&amp;gt;Home page title&amp;lt;/h1&amp;gt; &amp;lt;h2 data-rosey=&amp;#34;sub-title&amp;#34;&amp;gt;Home page subtitle&amp;lt;/h2&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; Will produce the translation keys:</description>
+    </item>
+    
+    <item>
+      <title>Base Locale File</title>
+      <link>/docs/base-locale/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/base-locale/</guid>
+      <description>The Rosey base locale file contains the original text of your website, as derived from the data-rosey tags found in your HTML.
+Generating the base locale file After tagging your site, Rosey&amp;rsquo;s generate command will create the base locale file.</description>
+    </item>
+    
+    <item>
+      <title>Namespacing</title>
+      <link>/docs/namespacing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/namespacing/</guid>
+      <description>Rosey supports hierarchical namespacing, where an element can scope the translation keys for all of its children. This is particularly useful when building components, as your component may be tagged with generic key names that are combined with the namespace in which that component is used.</description>
+    </item>
+    
+    <item>
+      <title>Translated Locale Files</title>
+      <link>/docs/locales/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/locales/</guid>
+      <description>Rosey locale files contain the translated text for your website in a given language, as derived from the text contained in the base locale file.
+Creating translated locale files Creating locale files is not a step performed by Rosey.</description>
+    </item>
+    
+    <item>
+      <title>Translating Attributes</title>
+      <link>/docs/translating-attributes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/translating-attributes/</guid>
+      <description>Rosey offers a workflow to translate content in HTML attributes, beyond only the HTML element content.
+Tagging attributes Use the data-rosey-attrs attribute to translate HTML attributes on an element that already has a data-rosey tag.</description>
+    </item>
+    
+    <item>
+      <title>Rosey Checks File</title>
+      <link>/docs/checks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/checks/</guid>
+      <description>The Rosey checks file highlights any discrepancies between your base translation file and your translated locale files, such as out of date or missing translations.
+Creating the checks file At the end of your translation workflow, after running Rosey generate and creating translated locale files, you will have a rosey directory structure such as:</description>
+    </item>
+    
+    <item>
+      <title>Translating Images</title>
+      <link>/docs/translating-images/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/translating-images/</guid>
+      <description>Rosey can replace images within blocks of translated HTML using translated images, using a filename convention.
+When Rosey encounters an asset inside a block of translated HTML, it will check for a language-specific image alongside the original, and rewrite the URL if one is found.</description>
+    </item>
+    
+    <item>
+      <title>Translating JSON Files</title>
+      <link>/docs/translating-json/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/translating-json/</guid>
+      <description>Rosey supports translation of JSON files using a schema file to determine the attributes to be translated.
+A Rosey schema file must live in the same folder as the original JSON file and should follow naming conventions of &amp;lt;originalFileName&amp;gt;.</description>
+    </item>
+    
+    <item>
+      <title>Configuring Rosey</title>
+      <link>/docs/options/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/options/</guid>
+      <description>Rosey can be configured through CLI flags, environment variables, or configuration files. Values will be merged from all sources, with CLI flags overriding environment variables, and environment variables overriding configuration files.</description>
+    </item>
+    
+    <item>
+      <title>Rosey Generate</title>
+      <link>/docs/generate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/generate/</guid>
+      <description>Rosey&amp;rsquo;s generate command ingests your built static site, and produces a base.json file containing all content that needs to be translated.
+Required options Source The directory of your built static website (the output folder of your SSG build).</description>
+    </item>
+    
+    <item>
+      <title>Rosey Build</title>
+      <link>/docs/build/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/build/</guid>
+      <description>Rosey&amp;rsquo;s build command ingests your built static site along with any locale files, and produces a multilingual site ready to deploy.
+CLI flags Serve Runs a local webserver on the dest folder after a successful build.</description>
+    </item>
+    
+    <item>
+      <title>Rosey Check</title>
+      <link>/docs/check/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/check/</guid>
+      <description>Rosey&amp;rsquo;s check command compares your base.json translation file against your rosey/locales/* locale files. This command will highlight any translations that are missing in your locale files, as well as any translations that are out of date and need to be updated.</description>
+    </item>
+    
+  </channel>
+</rss>

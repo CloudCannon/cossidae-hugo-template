@@ -1,0 +1,355 @@
+# Read the CloudCannon documentation for more information on how to use this file:
+# https://cloudcannon.com/documentation/articles/setting-global-configuration/?ssg=Hugo
+
+# Collections are related sets of content files, typically grouped by folder.
+# Here you can define your collections, as well as any
+# CloudCannon configuration specific to those collections.
+collections_config:
+  pages:
+    output: true
+    parse_branch_index: true
+    path: content
+    base_url: /
+    icon: feed
+    schemas:
+      default:
+        path: schemas/page.md
+    add_options:
+      - name: Add Site Page
+        editor: content
+        base_path: /
+        schema: default
+    _enabled_editors:
+      - visual
+      - content
+      
+      
+  docs:
+    path: content/docs
+    base_url: /docs
+    icon: file
+    disable_add_folder: true
+    schemas:
+      default:
+        path: schemas/docs.md
+    add_options:
+      - name: Read the docs
+        icon: local_library
+        href: https://docs.cloudcannon.com
+      - name: Add Document
+        editor: content
+        base_path: /
+        schema: default
+    _enabled_editors:
+      - content
+      - visual
+    output: true
+  data:
+    output: false
+    path: data
+    disable_add: true
+    disable_add_folder: true
+    _inputs:
+      small_icon:
+        type: image
+        comment: Dimensions - 16px x 16px
+      large_icon:
+        type: image
+        comment: Dimensions - 32px x 32px
+      apple_touch_icon:
+        type: image
+        comment: Dimensions - 57px x 57px
+      shortcut_icon:
+        type: image
+        comment: Bookmark icon
+      light:
+        type: object
+        comment: Light theme color palette
+      dark:
+        type: object
+        comment: Dark theme color palette
+      text: 
+        type: color
+        comment: main text color
+      flip-text:
+        type: color
+        comment: text color for dark backgrounds - e.g. banner
+      highlight: 
+        type: color
+        comment: text color for highlighted text
+      body-bg-color: 
+        type: color
+        comment: main body background color
+      code-element: 
+        type: color
+        comment: text color for codeblock html element tags
+      code-attribute:
+        type: color
+        comment: text color for codeblock html attributes
+      code-bool:
+        type: color
+        comment: text color for codeblock boolean values
+      code-params:
+        type: color
+        comment: text color for codeblock function/html parameters
+      code-values: 
+        type: color
+        comment: text color for codeblock key values
+      background-body: 
+        type: color
+        comment: main body background color
+      background: 
+        type: color
+      background-alt: 
+        type: color
+      selection: 
+        type: color
+        comment: selected text background color
+      text-main:
+        type: color
+      text-bright: 
+        type: color
+      text-muted: 
+        type: color
+      links: 
+        type: color
+      focus: 
+        type: color
+      border:
+        type: color
+      code: 
+        type: color
+      button-base: 
+        type: color
+      button-hover: 
+        type: color
+      scrollbar-thumb: 
+        type: color
+      scrollbar-thumb-hover:
+        type: color
+      form-placeholder: 
+        type: color
+      form-text:
+        type: color
+      variable:
+        type: color
+        comment: text color for codeblock variable names
+      diffcode-added: 
+        type: color
+        options:
+          format: hex
+          alpha: true
+        comment: background color for added lines in diffcode shortcode
+      diffcode-removed: 
+        type: color
+        options:
+          format: hex
+          alpha: true
+        comment: background color for removed lines in diffcode shortcode
+      html:
+        type: html
+      id:
+        type: text
+      show_until:
+        type: date
+        comment: Date to stop showing the banner
+
+# Control which collections are displayed in the CloudCannon site navigation,
+# and how those collections are grouped.
+collection_groups:
+  - heading: Base Pages
+    collections:
+      - pages
+  - heading: Docs
+    collections:
+      - docs
+  - heading: Site Settings
+    collections:
+      - data
+
+# Structures
+
+
+_structures:
+  product_logo_structure:
+    values:
+      - label: Image
+        icon: add_photo_alternate
+        description: Add as image
+        value: 
+          logo_image:
+          logo_image_dark:
+      - label: Text
+        icon: border_color
+        description: Add as text
+        value: 
+          logo_heading: 
+  footer_link_structure:
+    values:
+      - label: Image
+        icon: add_photo_alternate
+        description: Add logo
+        value: 
+          url_path:
+          image_path:
+          image_alt_text:
+      - label: Site Link
+        icon: add_link
+        description: Add an internal link
+        value: 
+          url_path:
+          link_title:
+  nav_link_structure:
+    values:
+      - label: Icon
+        icon: add_photo_alternate
+        description: Add social icon
+        value:
+          link_title:
+          link_url:
+          link_label:
+          link_icon_path:
+      - label: Site Link
+        icon: add_link
+        description: Add internal link
+        value: 
+          link_label:
+          link_url:
+        preview:
+          text: Site Link
+          icon: add_link
+
+
+  
+_inputs:
+  title: 
+    type: text
+    comment: The title of the page
+  nav_title:
+    type: text
+    comment: Side bar navigation title
+  nav_section:
+    type: text
+    comment: The main navigation section of this page
+  weight:
+    type: number
+    comment: The order of the page in the navigation
+  project_name:
+    type: text
+  default_og_image:
+    type: image
+    comment: The default image for social media sharing
+  logo: 
+    type: object
+    comment: choose between image or text based logo
+    options:
+      structures: _structures.product_logo_structure
+  footer_links:
+    type: array
+    comment: choose between image or text based links
+    options:
+      structures: _structures.footer_link_structure
+  logo_image:
+    type: image
+    comment: Default Display
+  logo_image_dark:
+    type: image
+    comment: Displays when dark mode is enabled
+  logo_text:
+    type: text
+  side_nav_title:
+    type: text
+    comment: The title of the side navigation
+  favicon:
+    type: object
+  nav_links:
+    type: array
+    comment: The links in the navigation
+    options:
+      structures: _structures.nav_link_structure
+  link_title:
+    type: text
+    comment: Name used for alt text
+  link_url:
+    type: url 
+    comment: 'Internal links should be structured as /link/'
+  link_label:
+    type: text
+    comment: Text displayed on the link
+  link_icon_path:
+    type: image
+    comment: '*prefers svgs for dark mode'
+  url_path:
+    type: text
+
+
+  
+
+# Snippets
+
+_snippets:
+  diffcode:
+    template: hugo_paired_shortcode_named_args
+    inline: false
+    definitions:
+      shortcode_name: diffcode
+      content_key: inner_code
+      named_args: 
+    preview:
+      text: Diffcode
+      subtext: Difference formatter
+      icon: difference
+    picker_preview:
+      text: Diffcode
+      subtext: Difference formatter
+      icon: difference
+    _inputs:
+      inner_code:
+        type: code
+  tree:
+    template: hugo_paired_shortcode_positional_args
+    inline: false
+    definitions:
+      shortcode_name: tree
+      content_key: inner_code
+    preview:
+      text: Tree
+      subtext: Tree directory formatter
+      icon: account_tree
+    picker_preview:
+      text: Tree
+      subtext: Tree directory formatter
+      icon: account_tree
+    _inputs:
+      inner_code:
+        type: code
+
+
+
+
+
+# Set this to true to disable auto-detection of collections.
+collections_config_override: false
+
+# Control which data sets are available to populate select and multiselect inputs.
+data_config:
+
+# Base path to your source files, relative to the root folder of your repository.
+source:
+
+# The locations of various types of files within your site.
+# Each path is relative to your site's source folder.
+paths:
+  data: data
+  collections: content
+  includes: layouts
+  layouts: layouts
+  static: static
+  uploads: static/uploads
+
+# Lets you control the look and behaviour of the Source Editor.
+source_editor:
+
+# Timezone of your site in IANA format. This is used by date and datetime inputs
+# within the CloudCannon Data Editor.
+timezone: Etc/UTC
