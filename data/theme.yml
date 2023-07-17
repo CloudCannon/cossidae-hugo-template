@@ -1,6 +1,6 @@
 colors:
   light:
-    text:
+    Typography:
         text: "#000"
         flip-text: "#fff"
         text-main: "#363636"
@@ -11,7 +11,7 @@ colors:
         selection: "#9e9e9e"
         form-placeholder: "#949494"
         form-text: "#1d1d1d"
-    background:
+    backgrounds:
         body-bg-color: "#fff"
         background-body: "#fff"
         background: "#efefef"
@@ -30,9 +30,9 @@ colors:
     scrollbar:
         scrollbar-thumb: "#aaaaaa"
         scrollbar-thumb-hover: "#9b9b9b"
-    border: 
+    borders: 
         border: "#dbdbdb"
-    focus:
+    focus_state:
         focus: "#0096bfab"
     shortcodes:
         diffcode-added: "#003506"
