@@ -259,17 +259,15 @@ _structures:
           link_title:
   nav_link_structure:
     values:
-      - label: Icon
+      - label: External Link
         icon: add_photo_alternate
-        description: Add social icon
         value:
           link_title:
           link_url:
           link_label:
           link_icon_path:
-      - label: Site Link
+      - label: Internal Link
         icon: add_link
-        description: Add internal link
         value: 
           link_label:
           link_url:
@@ -317,7 +315,7 @@ _inputs:
     type: text
   side_nav_title:
     type: text
-    comment: The title of the side navigation
+    label: Sidebar Nav Title
   favicon:
     type: object
   nav_links:
