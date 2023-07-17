@@ -34,17 +34,16 @@
     <title>{{.Params.title}} | {{ site.Data.meta.project_name }}</title>
 
     <style>
-        {{ range $theme, $colorCategories := site.Data.theme.colors }}
-            body.{{$theme}} {
-                {{ range $categoryIndex, $colorCategory := $colorCategories }}
-                {{ range $categoryName, $tokens := $colorCategory }}
-                    {{ range $token, $color := $tokens }}
-                    --{{$token}}: {{$color}};
-                    {{ end }}
-                {{ end }}
-                {{ end }}
-            }
-        {{ end }}
+        {{ range $theme, $groupedTokens := .Site.Data.theme.colors }}
+        body.{{$theme}} {
+          {{ range $group, $tokens := $groupedTokens }}
+            {{ range $token, $color := $tokens }}
+              --{{$token}}: {{$color}};
+            {{ end }}
+          {{ end }}
+        }
+      {{ end }}
+       
     </style>
 
 
