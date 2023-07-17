@@ -105,82 +105,97 @@ collections_config:
         comment: Scrollbar color palette
       text: 
         type: color
-        comment: main text color
+        comment: "main text color. defaults: light - #000, dark - #DBDBDB"
       flip-text:
         type: color
-        comment: text color for dark backgrounds - e.g. banner
+        comment: "text color for dark backgrounds - e.g. banner. defaults: light - #fff, dark - #DBDBDB"
       highlight: 
         type: color
-        comment: text color for highlighted text
+        comment: "text color for highlighted text. defaults: light - #de935f, dark - #de935f"
       body-bg-color: 
         type: color
-        comment: main body background color
+        comment: "main body background color. defaults: light - #fff, dark - #121516"
       code-element: 
         type: color
-        comment: text color for codeblock html element tags
+        comment: "text color for codeblock html element tags. defaults: light - #b294bb, dark - #b294bb"
       code-attribute:
         type: color
-        comment: text color for codeblock html attributes
+        comment: "text color for codeblock html attributes. defaults: light - #8abeb7, dark - #8abeb7"
       code-bool:
         type: color
-        comment: text color for codeblock boolean values
+        comment: "text color for codeblock boolean values. defaults: light - #ee6868, dark - #ee6868"
       code-params:
         type: color
-        comment: text color for codeblock function/html parameters
+        comment: "text color for codeblock function/html parameters. defaults: light - #de935f, dark - #de935f"
       code-values: 
         type: color
-        comment: text color for codeblock key values
+        comment: "text color for codeblock key values. defaults: light - #b5bd68, dark - #b5bd68"
       background-body: 
         type: color
-        comment: main body background color
+        comment: "main body background color. defaults: light - #fff, dark - #121516"
       background: 
         type: color
+        comment: "background color for main content area. defaults: light - #efefef, dark - #1d1f21"
       background-alt: 
         type: color
+        comment: "background color for alternate content area. defaults: light - #f7f7f7, dark - #080808"
       selection: 
         type: color
-        comment: selected text background color
+        comment: "selected text background color. defaults: light - #9e9e9e, dark - #616161"
       text-main:
         type: color
+        comment: "main text color. defaults: light - #363636, dark - #DBDBDB"
       text-bright: 
         type: color
+        comment: "text color for bright text. defaults: light - #000, dark - #fff"
       text-muted: 
         type: color
+        comment: "text color for muted text. defaults: light - #70777f, dark - #c8c8c8"
       links: 
         type: color
+        comment: "text color for links. defaults: light - #0076d1, dark - #de935f"
       focus: 
         type: color
+        comment: "focus color for links. defaults: light - #0096bfab, dark - #ff4d4d"
       border:
         type: color
+        comment: "border color for elements. defaults: light - #dbdbdb, dark - #ffffff"
       code: 
         type: color
+        comment: "text color for codeblock text. defaults: light - #000, dark - #fff"
       button-base: 
         type: color
+        comment: "background color for buttons. defaults: light - #d0cfcf, dark - #2b2b2b"
       button-hover: 
         type: color
+        comment: "background color for buttons on hover. defaults: light - #9b9b9b, dark - #606060"
       scrollbar-thumb: 
         type: color
+        comment: "scrollbar thumb color. defaults: light - #aaaaaa, dark - #555555"
       scrollbar-thumb-hover:
         type: color
+        comment: "scrollbar thumb color on hover. defaults: light - #9b9b9b, dark - #606060"
       form-placeholder: 
         type: color
+        comment: "placeholder text color for form inputs. defaults: light - #949494, dark - #e0e0e0"
       form-text:
         type: color
+        comment: "text color for form inputs. defaults: light - #1d1d1d, dark - #f0f0f0"
       variable:
         type: color
-        comment: text color for codeblock variable names
+        comment: "text color for codeblock variable names. defaults: light - #39a33c, dark - #c85f5f"
       diffcode-added: 
         type: color
         options:
           format: hex
           alpha: true
-        comment: background color for added lines in diffcode shortcode
+        comment: "background color for added lines in diffcode shortcode. defaults: light - #003506, dark - #003506"
       diffcode-removed: 
         type: color
         options:
           format: hex
           alpha: true
-        comment: background color for removed lines in diffcode shortcode
+        comment: "background color for removed lines in diffcode shortcode. defaults: light - #350000, dark - #350000"
       html:
         type: html
       id:
