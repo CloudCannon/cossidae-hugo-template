@@ -253,7 +253,7 @@ _structures:
           image_alt_text:
       - label: Site Link
         icon: add_link
-        description: Add an internal link
+        description: Add a link
         value: 
           url_path:
           link_title:
