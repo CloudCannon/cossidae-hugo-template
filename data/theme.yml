@@ -1,6 +1,6 @@
 colors:
   light:
-    Typography:
+    typography:
         text: "#000"
         flip-text: "#fff"
         text-main: "#363636"
@@ -11,12 +11,12 @@ colors:
         selection: "#9e9e9e"
         form-placeholder: "#949494"
         form-text: "#1d1d1d"
-    backgrounds:
+    background_colors:
         body-bg-color: "#fff"
         background-body: "#fff"
         background: "#efefef"
         background-alt: "#f7f7f7"
-    code_block:
+    code_block_colors:
         code-element: "#b294bb"
         code-attribute: "#8abeb7"
         code-bool: "#ee6868"
@@ -24,17 +24,17 @@ colors:
         code-values: "#b5bd68"
         variable: "#39a33c"
         code: "#000"
-    buttons:
+    button_colors:
         button-base: "#d0cfcf"
         button-hover: "#9b9b9b"
-    scrollbar:
+    scrollbar_colors:
         scrollbar-thumb: "#aaaaaa"
         scrollbar-thumb-hover: "#9b9b9b"
-    borders: 
+    border_colors: 
         border: "#dbdbdb"
-    focus_state:
+    focus_colors:
         focus: "#0096bfab"
-    shortcodes:
+    shortcode_colors:
         diffcode-added: "#003506"
         diffcode-removed: "#350000"
   dark:
