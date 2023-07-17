@@ -280,16 +280,15 @@ _structures:
 _inputs:
   title: 
     type: text
-    comment: The title of the page
   nav_title:
     type: text
-    comment: Side bar navigation title
+    comment: The name of the page shown in the sidebar navigation
   nav_section:
     type: text
-    comment: The main navigation section of this page
+    comment: The name of the section the page is nested under in the sidebar navigation
   weight:
     type: number
-    comment: The order of the page in the navigation
+    comment: The order of the page in the sidebar group
   project_name:
     type: text
   default_og_image:
