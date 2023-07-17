@@ -105,30 +105,37 @@ collections_config:
         comment: Scrollbar color palette
       text: 
         type: color
+        label: Primary text
         comment: "main text color. defaults: light - #000, dark - #DBDBDB"
       flip-text:
         type: color
         comment: "text color for dark backgrounds - e.g. banner. defaults: light - #fff, dark - #DBDBDB"
       highlight: 
         type: color
+        label: Highlighted text
         comment: "text color for highlighted text. defaults: light - #de935f, dark - #de935f"
       body-bg-color: 
         type: color
         comment: "main body background color. defaults: light - #fff, dark - #121516"
       code-element: 
         type: color
+        label: HTML element tags
         comment: "text color for codeblock html element tags. defaults: light - #b294bb, dark - #b294bb"
       code-attribute:
         type: color
+        label: HTML attributes
         comment: "text color for codeblock html attributes. defaults: light - #8abeb7, dark - #8abeb7"
       code-bool:
         type: color
+        label: Boolean values
         comment: "text color for codeblock boolean values. defaults: light - #ee6868, dark - #ee6868"
       code-params:
         type: color
+        label: Function/HTML parameters
         comment: "text color for codeblock function/html parameters. defaults: light - #de935f, dark - #de935f"
       code-values: 
         type: color
+        label: Key values
         comment: "text color for codeblock key values. defaults: light - #b5bd68, dark - #b5bd68"
       background-body: 
         type: color
@@ -162,6 +169,7 @@ collections_config:
         comment: "border color for elements. defaults: light - #dbdbdb, dark - #ffffff"
       code: 
         type: color
+        label: Codeblock text color
         comment: "text color for codeblock text. defaults: light - #000, dark - #fff"
       button-base: 
         type: color
