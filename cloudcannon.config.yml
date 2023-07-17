@@ -67,10 +67,10 @@ collections_config:
         comment: Bookmark icon
       light:
         type: object
-        comment: Light theme color palette
+        label: Light theme color palette
       dark:
         type: object
-        comment: Dark theme color palette
+        label: Dark theme color palette
       typography:
         type: object
         label: Text
@@ -297,7 +297,8 @@ _inputs:
     comment: The default image for social media sharing
   logo: 
     type: object
-    comment: choose between image or text based logo
+    label: Site Logo
+    comment: Choose between image or text based logos
     options:
       structures: _structures.product_logo_structure
   footer_links:
@@ -320,7 +321,7 @@ _inputs:
     type: object
   nav_links:
     type: array
-    comment: The links in the navigation
+    label: Navigation Links
     options:
       structures: _structures.nav_link_structure
   link_title:
