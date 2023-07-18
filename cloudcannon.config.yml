@@ -290,7 +290,7 @@ _inputs:
       value_key: nav_section
       preview:
         text:
-        - key: "Nav Section"
+        - key: nav_section
     comment: The name of the section the page is nested under in the sidebar navigation
   weight:
     type: number
