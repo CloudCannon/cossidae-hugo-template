@@ -405,6 +405,8 @@ _inputs:
   shortcut_icon:
     type: image
     comment: Bookmark icon
+  enable_banner:
+    type: boolean
   
 
 

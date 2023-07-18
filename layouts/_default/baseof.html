@@ -51,7 +51,9 @@
 
 <body {{ with .Params.nav_section -}}{{- if not (eq . "Root" ) -}} data-pagefind-filter="section:{{ . }}" {{- end -}}{{-
     end }} x-data="darkModeToggle()" x-init="init()" x-bind:class="{ dark: mode === 'dark', light: mode === 'light' }"  >
-    {{ partial "banner.html" . }}
+    {{ if site.Data.banner.enable_banner }}
+        {{ partial "banner.html" . }}
+    {{ end }}
     {{ partial "nav.html" . }}
     <div class="search">
         <script src="/_pagefind/pagefind-ui.js" type="text/javascript"></script>
