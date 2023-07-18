@@ -28,7 +28,7 @@ collections_config:
     path: data
     disable_add: true
     disable_add_folder: true
-    icon: menu
+    icon: table_rows
     filter:
        base: none
        include: 
@@ -93,6 +93,7 @@ collections_config:
   Meta_Data:
     output: false
     path: data
+    icon: settings
     disable_add: true
     disable_add_folder: true
     filter: 
