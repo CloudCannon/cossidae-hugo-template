@@ -5,14 +5,14 @@ nav_section: Tagging
 weight: 6
 _schema: docs
 ---
-<<tree>>
+{{<tree>}}
+```
 _site
 >> assets
    >> hello.png
 +   >> hello.fr.png
-<</tree>>
-
-
+```
+{{</tree>}}
 
 Rosey can replace images within blocks of translated HTML using translated images, using a filename convention.
 
