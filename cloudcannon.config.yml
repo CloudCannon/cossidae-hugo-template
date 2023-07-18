@@ -23,6 +23,18 @@ collections_config:
       - visual
       - content
 
+  Navigation:
+    output: false
+    path: data
+    disable_add: true
+    disable_add_folder: true
+    icon: menu
+    filter:
+       base: none
+       include: 
+        - nav.yml
+        - footer.yml
+
   Theme_Palette:
     output: false
     path: data
@@ -67,6 +79,8 @@ collections_config:
     filter: 
       exclude:
         - theme.yml
+        - nav.yml
+        - footer.yml
     _inputs:
       small_icon:
         type: image
@@ -259,6 +273,9 @@ collection_groups:
     collections:
       - data
       - Theme_Palette
+  - heading: Navigation Data
+    collections:
+      - Navigation
 
 # Structures
 
