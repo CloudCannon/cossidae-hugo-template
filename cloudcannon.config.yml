@@ -442,7 +442,7 @@ _snippets:
           editor_key: inner_code
           allow_leading: true
           raw: true
-          forbidden_tokens: "```"
+          forbidden_tokens: ["```"]
           style:
             block:
               leading: "\n"
