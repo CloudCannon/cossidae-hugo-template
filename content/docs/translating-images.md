@@ -5,11 +5,12 @@ nav_section: Tagging
 weight: 6
 _schema: docs
 ---
-{{< tree >}}_site
+<<tree>>
+_site
 >> assets
    >> hello.png
 +   >> hello.fr.png
-{{< /tree >}}
+<</tree>>
 
 
 
