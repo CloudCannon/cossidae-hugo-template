@@ -102,19 +102,7 @@ collections_config:
         - nav.yml
         - footer.yml
         - banner.yml
-    _inputs:
-      small_icon:
-        type: image
-        comment: Dimensions - 16px x 16px
-      large_icon:
-        type: image
-        comment: Dimensions - 32px x 32px
-      apple_touch_icon:
-        type: image
-        comment: Dimensions - 57px x 57px
-      shortcut_icon:
-        type: image
-        comment: Bookmark icon
+      
       
 
 # Control which collections are displayed in the CloudCannon site navigation,
@@ -405,6 +393,18 @@ _inputs:
   pagefind-ui-tag:
     type: color
     comment: "tag color for pagefind ui. defaults: light - #efefef, dark - #1d1f21"
+  small_icon:
+    type: image
+    comment: Dimensions - 16px x 16px
+  large_icon:
+    type: image
+    comment: Dimensions - 32px x 32px
+  apple_touch_icon:
+    type: image
+    comment: Dimensions - 57px x 57px
+  shortcut_icon:
+    type: image
+    comment: Bookmark icon
   
 
 
