@@ -244,29 +244,27 @@ _structures:
           logo_heading: 
   footer_link_structure:
     values:
-      - label: Image
+      - label: Add Image Link
         icon: add_photo_alternate
-        description: Add logo
         value: 
           url_path:
           image_path:
           image_alt_text:
-      - label: Site Link
+      - label: Add Text Link
         icon: add_link
-        description: Add a link
         value: 
           url_path:
           link_title:
   nav_link_structure:
     values:
-      - label: External Link
+      - label: Link with Icon
         icon: add_photo_alternate
         value:
           link_title:
           link_url:
           link_label:
           link_icon_path:
-      - label: Internal Link
+      - label: Text Link
         icon: add_link
         value: 
           link_label:
