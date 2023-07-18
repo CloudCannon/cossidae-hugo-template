@@ -103,6 +103,10 @@ collections_config:
         type: object
         label: Scrollbars
         comment: Scrollbar color palette
+      pagefind_colors:
+        type: object
+        label: Pagefind
+        comment: Pagefind color palette
       text: 
         type: color
         label: Primary text
@@ -204,6 +208,21 @@ collections_config:
           format: hex
           alpha: true
         comment: "background color for removed lines in diffcode shortcode. defaults: light - #350000, dark - #350000"
+      pagefind-ui-primary:
+        type: color
+        comment: "primary color for pagefind ui. defaults: light - #000, dark - #D8D8D8"
+      pagefind-ui-secondary:
+        type: color
+        comment: "secondary color for pagefind ui. defaults: light - #000, dark - #D8D8D8"
+      pagefind-ui-background:
+        type: color
+        comment: "background color for pagefind ui. defaults: light - #efefef, dark - #1d1f21"
+      pagefind-ui-border:
+        type: color
+        comment: "border color for pagefind ui. defaults: light - #efefef, dark - #D8D8D8"
+      pagefind-ui-tag:
+        type: color
+        comment: "tag color for pagefind ui. defaults: light - #efefef, dark - #1d1f21"
       html:
         type: html
       id:
@@ -339,6 +358,7 @@ _inputs:
   url_path:
     type: text
     comment: 'if external link, include https://'
+  
 
 
   
