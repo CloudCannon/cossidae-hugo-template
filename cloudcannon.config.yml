@@ -406,7 +406,7 @@ _inputs:
     type: image
     comment: Bookmark icon
   enable_banner:
-    type: boolean
+    type: switch
   
 
 
