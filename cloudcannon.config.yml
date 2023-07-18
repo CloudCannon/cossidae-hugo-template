@@ -434,7 +434,7 @@ _snippets:
       inner_code:
         type: code
   tree:
-    snippet: "<comp.CodeBlock>\n```[[inner]]```\n</comp.CodeBlock>"
+    snippet: "{<comp.CodeBlock>}\n```[[inner]]```\n{</comp.CodeBlock>}"
     params: 
       inner:
         parser: content
