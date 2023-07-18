@@ -434,7 +434,12 @@ _snippets:
       inner_code:
         type: code
   tree:
-    template: hugo_paired_shortcode_positional_args
+    snippet: <<tree>>[[inner]]<</tree>>
+    params: 
+      inner:
+        parser: content
+        options:  
+          editor_key: inner_code
     inline: false
     definitions:
       shortcode_name: tree
