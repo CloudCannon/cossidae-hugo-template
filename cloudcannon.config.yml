@@ -25,10 +25,14 @@ collections_config:
 
   Theme_Palette:
     output: false
-    path: data/theme.yml
+    path: data
     disable_add: true
     disable_add_folder: true
     icon: color_lens
+    filter:
+       base: none
+       include: 
+        - theme.yml
 
       
       
