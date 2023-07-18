@@ -22,6 +22,14 @@ collections_config:
     _enabled_editors:
       - visual
       - content
+
+  Theme_Palette:
+    output: false
+    path: data/theme.yml
+    disable_add: true
+    disable_add_folder: true
+    icon: color_lens
+
       
       
   docs:
