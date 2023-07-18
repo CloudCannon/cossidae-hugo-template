@@ -101,6 +101,7 @@ collections_config:
         - theme.yml
         - nav.yml
         - footer.yml
+        - banner.yml
     _inputs:
       small_icon:
         type: image
@@ -130,6 +131,7 @@ collection_groups:
       - Meta_Data
       - Theme_Palette
       - Navigation
+      - Banner
 
 # Structures
 
