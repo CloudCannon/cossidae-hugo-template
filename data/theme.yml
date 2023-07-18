@@ -84,8 +84,8 @@ colors:
       pagefind-ui-primary: "#D8D8D8" 
       pagefind-ui-secondary: "#D8D8D8"
       pagefind-ui-background: "#1d1f21"
-      pagefind-ui-border: "#D8D8D8"
-      pagefind-ui-tag: "#2b2b2b"
+      pagefind-ui-border: "#2b2b2b"
+      pagefind-ui-tag: "#1d1f21"
     
    
    
