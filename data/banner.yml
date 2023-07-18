@@ -1,4 +1,4 @@
 html: '<p>Family: Cossidae; Leach, 1815</p>'
 id: cossidae
 show_until: 2042-01-01T00:00:00Z
-enable_banner: false
+enable_banner: true
