@@ -5,15 +5,6 @@ nav_section: Tagging
 weight: 6
 _schema: docs
 ---
-{{<tree>}}
-_site
->> assets
-   >> hello.png
-+   >> hello.fr.png
-{{</tree>}}
-
-
-
 Rosey can replace images within blocks of translated HTML using translated images, using a filename convention.
 
 When Rosey encounters an asset inside a block of translated HTML, it will check for a language-specific image alongside the original, and rewrite the URL if one is found. For a given \`image.png\`, Rosey will check for an \`image.&lt;language&gt;.png\` file to use in its place.
