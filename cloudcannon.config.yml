@@ -440,7 +440,7 @@ _snippets:
         parser: content
         options:  
           editor_key: inner_code
-          indented_by: '  '
+          allow_leading: true
     inline: false
     definitions:
       shortcode_name: tree
