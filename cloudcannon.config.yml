@@ -331,7 +331,7 @@ _inputs:
     comment: Name used for alt text
   link_url:
     type: url 
-    comment: 'Internal links should be structured as /link/'
+    comment: 'if external link, include https://'
   link_label:
     type: text
     comment: Text displayed on the link
