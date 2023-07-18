@@ -286,7 +286,7 @@ _inputs:
   nav_section:
     type: select
     options:
-      values: collections.docs
+      values: content.docs
       value_key: nav_section
       preview:
         text:
