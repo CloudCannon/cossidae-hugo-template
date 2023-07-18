@@ -251,6 +251,7 @@ collection_groups:
   - heading: Site Settings
     collections:
       - data
+      - Theme_Palette
 
 # Structures
 
