@@ -64,6 +64,9 @@ collections_config:
     path: data
     disable_add: true
     disable_add_folder: true
+    filter: 
+      exclude:
+        - theme.yml
     _inputs:
       small_icon:
         type: image
