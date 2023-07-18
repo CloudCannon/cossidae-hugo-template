@@ -45,55 +45,7 @@ collections_config:
        base: none
        include: 
         - theme.yml
-
-      
-      
-  docs:
-    path: content/docs
-    base_url: /docs
-    icon: file
-    disable_add_folder: true
-    schemas:
-      default:
-        path: schemas/docs.md
-    add_options:
-      - name: Read the docs
-        icon: local_library
-        href: https://docs.cloudcannon.com
-      - name: Add Document
-        editor: content
-        base_path: /
-        schema: default
-    _enabled_editors:
-      - content
-      - visual
-    filter:
-      exclude:
-        - _index.md
-    output: true
-  data:
-    output: false
-    path: data
-    disable_add: true
-    disable_add_folder: true
-    filter: 
-      exclude:
-        - theme.yml
-        - nav.yml
-        - footer.yml
     _inputs:
-      small_icon:
-        type: image
-        comment: Dimensions - 16px x 16px
-      large_icon:
-        type: image
-        comment: Dimensions - 32px x 32px
-      apple_touch_icon:
-        type: image
-        comment: Dimensions - 57px x 57px
-      shortcut_icon:
-        type: image
-        comment: Bookmark icon
       light:
         type: object
         label: Light theme color palette
@@ -252,6 +204,63 @@ collections_config:
       pagefind-ui-tag:
         type: color
         comment: "tag color for pagefind ui. defaults: light - #efefef, dark - #1d1f21"
+  Banner:
+    output: false
+    path: data
+    disable_add: true
+    disable_add_folder: true
+    icon: add_alert
+    filter:
+       base: none
+       include: 
+        - banner.yml
+
+  docs:
+    path: content/docs
+    base_url: /docs
+    icon: file
+    disable_add_folder: true
+    schemas:
+      default:
+        path: schemas/docs.md
+    add_options:
+      - name: Read the docs
+        icon: local_library
+        href: https://docs.cloudcannon.com
+      - name: Add Document
+        editor: content
+        base_path: /
+        schema: default
+    _enabled_editors:
+      - content
+      - visual
+    filter:
+      exclude:
+        - _index.md
+    output: true
+  Meta_Data:
+    output: false
+    path: data
+    disable_add: true
+    disable_add_folder: true
+    filter: 
+      exclude:
+        - theme.yml
+        - nav.yml
+        - footer.yml
+    _inputs:
+      small_icon:
+        type: image
+        comment: Dimensions - 16px x 16px
+      large_icon:
+        type: image
+        comment: Dimensions - 32px x 32px
+      apple_touch_icon:
+        type: image
+        comment: Dimensions - 57px x 57px
+      shortcut_icon:
+        type: image
+        comment: Bookmark icon
       html:
         type: html
       id:
@@ -271,10 +280,8 @@ collection_groups:
       - docs
   - heading: Site Settings
     collections:
-      - data
+      - Meta_Data
       - Theme_Palette
-  - heading: Navigation Data
-    collections:
       - Navigation
 
 # Structures
