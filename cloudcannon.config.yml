@@ -280,6 +280,7 @@ _structures:
 _inputs:
   title: 
     type: text
+    label: Page Title
   nav_title:
     type: text
     label: Sidebar Nav Title
