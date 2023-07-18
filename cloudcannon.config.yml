@@ -24,7 +24,7 @@ collections_config:
       - content
 
   Navigation:
-    output: false
+    output: true
     path: data
     disable_add: true
     disable_add_folder: true
@@ -36,7 +36,7 @@ collections_config:
         - footer.yml
 
   Theme_Palette:
-    output: false
+    output: true
     path: data
     disable_add: true
     disable_add_folder: true
@@ -204,9 +204,9 @@ collections_config:
       pagefind-ui-tag:
         type: color
         comment: "tag color for pagefind ui. defaults: light - #efefef, dark - #1d1f21"
-        
+
   Banner:
-    output: false
+    output: true
     path: data
     disable_add: true
     disable_add_folder: true
