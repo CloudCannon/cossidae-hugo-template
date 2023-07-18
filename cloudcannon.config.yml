@@ -284,7 +284,13 @@ _inputs:
     type: text
     comment: The name of the page shown in the sidebar navigation
   nav_section:
-    type: text
+    type: multiselect
+    options:
+      values: collections.docs
+      value_key: nav_section
+      preview:
+        text:
+          - key: "Nav Section"
     comment: The name of the section the page is nested under in the sidebar navigation
   weight:
     type: number
