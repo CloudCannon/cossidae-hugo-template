@@ -204,6 +204,7 @@ collections_config:
       pagefind-ui-tag:
         type: color
         comment: "tag color for pagefind ui. defaults: light - #efefef, dark - #1d1f21"
+        
   Banner:
     output: false
     path: data
@@ -214,6 +215,15 @@ collections_config:
        base: none
        include: 
         - banner.yml
+    _inputs:
+      html:
+        type: html
+      id:
+        type: text
+      show_until:
+        type: date
+        comment: Date to stop showing the banner
+
 
   docs:
     path: content/docs
@@ -261,13 +271,7 @@ collections_config:
       shortcut_icon:
         type: image
         comment: Bookmark icon
-      html:
-        type: html
-      id:
-        type: text
-      show_until:
-        type: date
-        comment: Date to stop showing the banner
+      
 
 # Control which collections are displayed in the CloudCannon site navigation,
 # and how those collections are grouped.
