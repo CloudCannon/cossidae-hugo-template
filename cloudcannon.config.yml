@@ -434,13 +434,20 @@ _snippets:
       inner_code:
         type: code
   tree:
-    snippet: <<tree>>[[inner]]<</tree>>
+    snippet: <<tree>>\n```[[inner]]```\n<</tree>>
     params: 
       inner:
         parser: content
         options:  
           editor_key: inner_code
           allow_leading: true
+          raw: true
+          forbidden_tokens: "```"
+          style:
+            block:
+              leading: "\n"
+              trailing: "\n"
+              indent: ""
     inline: false
     definitions:
       shortcode_name: tree
