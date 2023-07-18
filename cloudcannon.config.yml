@@ -340,6 +340,7 @@ _inputs:
     comment: '*prefers svgs for dark mode'
   url_path:
     type: text
+    comment: 'if external link, include https://'
 
 
   
