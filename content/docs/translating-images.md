@@ -6,15 +6,11 @@ weight: 6
 _schema: docs
 ---
 {{<tree>}}
-
 _site
 >> assets
    >> hello.png
 +   >> hello.fr.png
-
 {{</tree>}}
-
-
 
 
 
@@ -58,12 +54,10 @@ When translating this file into your given locale, the image URL does not need t
 Now before building your multilingual site with Rosey, add an asset matching the language code alongside the original asset:
 
 {{<tree>}}
-
 _site
 >> assets
    >> hello.png
 +   >> hello.fr.png
-
 {{</tree>}}
 
 Now after running \`rosey build\`, you should see the following final output on a \`fr\` page:
