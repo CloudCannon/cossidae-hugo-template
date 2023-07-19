@@ -60,14 +60,7 @@ collections_config:
        base: none
        include: 
         - banner.yml
-    _inputs:
-      html:
-        type: html
-      id:
-        type: text
-      show_until:
-        type: date
-        comment: Date to stop showing the banner
+      
 
 
   docs:
@@ -410,7 +403,14 @@ _inputs:
     comment: Bookmark icon
   enable_banner:
     type: switch
-  
+  html:
+    type: html
+    label: Banner Content
+  id:
+    type: text
+  show_until:
+    type: date
+    comment: Date to stop showing the banner
 
 
   
