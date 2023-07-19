@@ -445,6 +445,7 @@ _snippets:
           editor_key: inner_code
           allow_leading: true
           style:
+            output: block
             block:
               leading: "\n"
               trailing: "\n"
@@ -475,6 +476,7 @@ _snippets:
         options:  
           editor_key: inner_code
           style:
+            output: block
             block:
               leading: "\n"
               trailing: "\n"
