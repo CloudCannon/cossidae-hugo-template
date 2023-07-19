@@ -65,6 +65,13 @@ collections_config:
     preview:
       gallery:
         icon: add_alert
+      metadata:
+        - icon: date_range
+          text: 
+            - key: show_until
+        - icon: add_alert
+          text: 
+            - key: enable_banner
 
 
   docs:
