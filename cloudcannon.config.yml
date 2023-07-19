@@ -85,6 +85,11 @@ collections_config:
       - content
       - visual
     parse_branch_index: true
+    preview:
+      metadata: 
+        - icon: folder
+          text: 
+            - key: nav_section
 
     output: true
   Meta_Data:
