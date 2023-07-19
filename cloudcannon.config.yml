@@ -451,10 +451,6 @@ _snippets:
               trailing: "\n"
               indent: ""
     inline: false
-    definitions:
-      shortcode_name: diffcode
-      content_key: inner_code
-      named_args: 
     preview:
       text: Diffcode
       subtext: Difference formatter
