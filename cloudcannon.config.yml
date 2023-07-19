@@ -62,7 +62,8 @@ collections_config:
        base: none
        include: 
         - banner.yml
-      
+    gallery:
+      icon: add_alert
 
 
   docs:
