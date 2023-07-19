@@ -133,7 +133,7 @@ collection_groups:
       - Meta_Data
       - Theme_Palette
       - Navigation
-      - Banner
+      - banner
 
 # Structures
 
