@@ -25,9 +25,6 @@ collections_config:
       - visual
     filter: 
       base: strict
-      
-      
-
   Navigation:
     output: true
     path: data
@@ -39,7 +36,6 @@ collections_config:
        include: 
         - nav.yml
         - footer.yml
-
   Theme_Palette:
     output: true
     path: data
@@ -50,8 +46,6 @@ collections_config:
        base: none
        include: 
         - theme.yml
-      
-
   banner:
     output: true
     path: data
@@ -72,8 +66,6 @@ collections_config:
         - icon: add_alert
           text: 
             - key: enable_banner
-
-
   docs:
     path: content/docs
     base_url: /docs
