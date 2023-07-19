@@ -431,7 +431,7 @@ _inputs:
 
 _snippets:
   diffcode:
-    snippet: "<comp.CodeBlock>\n```[[lang]][[inner]]```\n</comp.CodeBlock>"
+    snippet: "{{<diffcode>}}\n```[[lang]][[inner]]```\n{{</diffcode>}}"
     params: 
       lang:
         parser: argument
