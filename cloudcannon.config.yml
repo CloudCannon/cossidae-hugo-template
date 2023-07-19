@@ -24,7 +24,7 @@ collections_config:
       - visual
     filter:
       exclude:
-        - docs
+        - /docs
 
   Navigation:
     output: true
