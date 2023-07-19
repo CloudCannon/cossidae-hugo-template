@@ -22,9 +22,10 @@ collections_config:
     _enabled_editors:
       - content
       - visual
-    filter:
-      exclude:
-        - /docs
+    filter: 
+      base: strict
+      
+      
 
   Navigation:
     output: true
@@ -82,9 +83,8 @@ collections_config:
     _enabled_editors:
       - content
       - visual
-    filter:
-      exclude:
-        - _index.md
+    parse_branch_index: true
+
     output: true
   Meta_Data:
     output: false
