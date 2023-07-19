@@ -1,10 +1,11 @@
 ---
-title: "Translated Locale Files"
-nav_title: "Translated Locale Files"
+_schema: default
+title: Translated Locale Files
+nav_title: Translated Locale Files
 nav_section: Workflow
 weight: 5
+draft: true
 ---
-
 Rosey locale files contain the translated text for your website in a given language, as derived from the text contained in the [base locale file](/docs/base-locale/).
 
 ## Creating translated locale files
