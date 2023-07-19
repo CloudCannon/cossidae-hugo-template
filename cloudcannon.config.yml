@@ -90,6 +90,9 @@ collections_config:
         - icon: folder
           text: 
             - key: nav_section
+        - icon: format_list_numbered
+          text: 
+            - key: weight
 
     output: true
   Meta_Data:
