@@ -20,8 +20,8 @@ collections_config:
         base_path: /
         schema: default
     _enabled_editors:
-      - visual
       - content
+      - visual
 
   Navigation:
     output: true
