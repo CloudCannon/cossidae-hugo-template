@@ -52,7 +52,7 @@ collections_config:
         - theme.yml
       
 
-  Banner:
+  banner:
     output: true
     path: data
     disable_add: true
