@@ -411,7 +411,6 @@ _inputs:
     type: text
     label: Unique ID
     comment: Prevents repeated display for users who close the banner, changing ID resets for all.
-
   show_until:
     type: date
     comment: Date to stop showing the banner
