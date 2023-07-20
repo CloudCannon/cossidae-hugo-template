@@ -9,7 +9,8 @@ Rosey can replace images within blocks of translated HTML using translated image
 
 ​​​​​
 
-{{<diffcode>}}```html
+{{<diffcode>}}```
+html
 +<div data-rosey="content">
     <p>Hello!</p>
     <img src='/assets/hello.png' />
@@ -20,8 +21,7 @@ When Rosey encounters an asset inside a block of translated HTML, it will check 
 
 First, an element wrapping the image must be tagged with a \`data-rosey\` attribute:
 
-{{<diffcode>}}```
-html
+{{<diffcode>}}```html
 +<div data-rosey="content">
     <p>Hello!</p>
     <img src='/assets/hello.png' />
