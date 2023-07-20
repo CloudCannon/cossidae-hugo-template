@@ -1,18 +1,18 @@
 ---
-title: "Namespacing"
-nav_title: "Namespacing"
+_schema: default
+title: Namespacing
+nav_title: Namespacing
 nav_section: Tagging
 weight: 4
+draft: false
 ---
-
 Rosey supports hierarchical namespacing, where an element can scope the translation keys for all of its children. This is particularly useful when building components, as your component may be tagged with generic key names that are combined with the namespace in which that component is used.
 
 ## Defining a namespace
 
 Use the `data-rosey-ns` attribute to define namespaces to be included as part of the key for the translations. All parents of an element with a `data-rosey-ns` attribute will contribute to the final key, with each namespace concatenated by a colon.
 
-{{< diffcode >}}
-```html
+{{<diffcode>}}```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -25,8 +25,7 @@ Use the `data-rosey-ns` attribute to define namespaces to be included as part of
     </div>
   </body>
 </html>
-```
-{{< /diffcode >}}
+```{{</diffcode>}}
 
 In the above example, all text is tagged as `data-rosey="title"`. Due to the namespace attributes provided, these are de-conflicted and the output translation keys will be:
 
@@ -44,8 +43,7 @@ Use the `data-rosey-root` attribute to start a new namespace for all child eleme
 
 In this example we set a root namespace separately for our head and body elements, and unset the namespace within an inner div:
 
-{{< diffcode >}}
-```html
+{{<diffcode>}}```html
 <!DOCTYPE html>
 <html>
 +  <head data-rosey-root="meta">
@@ -58,8 +56,7 @@ In this example we set a root namespace separately for our head and body element
     </div>
   </body>
 </html>
-```
-{{< /diffcode >}}
+```{{</diffcode>}}
 
 Output translation keys:
 

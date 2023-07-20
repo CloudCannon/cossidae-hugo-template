@@ -4,7 +4,5 @@ nav_links:
     link_url: https://github.com/cloudcannon/cossidae-template
     link_label: 1.0.0
     link_icon_path: /images/github.svg
-  - link_label: testing
-    link_url: testing
 logo:
   logo_heading: cossidae

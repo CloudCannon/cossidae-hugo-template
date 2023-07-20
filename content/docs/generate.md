@@ -1,20 +1,20 @@
 ---
-title: "Rosey Generate"
-nav_title: "Rosey Generate"
+_schema: default
+title: Rosey Generate
+nav_title: Rosey Generate
 nav_section: Rosey CLI
 weight: 11
+draft: false
 ---
-
 Rosey's `generate` command ingests your built static site, and produces a `base.json` file containing all content that needs to be translated.
 
 ## Required options
 
 ### Source
+
 The directory of your built static website (the output folder of your SSG build).
 
-| CLI Flag            | ENV Variable   | Config Key |
-|---------------------|----------------|------------|
-| `--source <SOURCE>` | `ROSEY_SOURCE` | `source`   |
+<table><thead><tr><th>CLI Flag</th><th>ENV Variable</th><th>Config Key</th></tr></thead><tbody><tr><td><code>--source &lt;SOURCE&gt;</code></td><td><code>ROSEY_SOURCE</code></td><td><code>source</code></td></tr></tbody></table>
 
 ## Options
 
@@ -22,30 +22,22 @@ The directory of your built static website (the output folder of your SSG build)
 
 The path to generate the Rosey base locale file to. Defaults to `rosey/base.json`
 
-| CLI Flag        | ENV Variable | Config Key |
-|-----------------|--------------|------------|
-| `--base <FILE>` | `ROSEY_BASE` | `base`     |
+<table><thead><tr><th>CLI Flag</th><th>ENV Variable</th><th>Config Key</th></tr></thead><tbody><tr><td><code>--base &lt;FILE&gt;</code></td><td><code>ROSEY_BASE</code></td><td><code>base</code></td></tr></tbody></table>
 
 ### Separator
 
 The separator to use between Rosey namespaces when generating keys. Defaults to `:`
 
-| CLI Flag             | ENV Variable      | Config Key  |
-|----------------------|-------------------|-------------|
-| `--separator <CHAR>` | `ROSEY_SEPARATOR` | `separator` |
+<table><thead><tr><th>CLI Flag</th><th>ENV Variable</th><th>Config Key</th></tr></thead><tbody><tr><td><code>--separator &lt;CHAR&gt;</code></td><td><code>ROSEY_SEPARATOR</code></td><td><code>separator</code></td></tr></tbody></table>
 
 ### Tag
 
 The HTML attribute prefix that Rosey should read from. Defaults to `data-rosey`
 
-| CLI Flag         | ENV Variable | Config Key |
-|------------------|--------------|------------|
-| `--tag <STRING>` | `ROSEY_TAG`  | `tag`      |
+<table><thead><tr><th>CLI Flag</th><th>ENV Variable</th><th>Config Key</th></tr></thead><tbody><tr><td><code>--tag &lt;STRING&gt;</code></td><td><code>ROSEY_TAG</code></td><td><code>tag</code></td></tr></tbody></table>
 
 ### Version
 
 The Rosey locale version to generate and build from. Version 1 should only be used for compatibility with legacy sites. Defaults to version `2`
 
-| CLI Flag             | ENV Variable    | Config Key |
-|----------------------|-----------------|------------|
-| `--version <NUMBER>` | `ROSEY_VERSION` | `version`  |
+<table><thead><tr><th>CLI Flag</th><th>ENV Variable</th><th>Config Key</th></tr></thead><tbody><tr><td><code>--version &lt;NUMBER&gt;</code></td><td><code>ROSEY_VERSION</code></td><td><code>version</code></td></tr></tbody></table>
