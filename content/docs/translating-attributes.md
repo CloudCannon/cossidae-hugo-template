@@ -1,18 +1,18 @@
 ---
-title: "Translating Attributes"
-nav_title: "Translating Attributes"
+_schema: default
+title: Translating Attributes
+nav_title: Translating Attributes
 nav_section: Tagging
 weight: 5
+draft: false
 ---
-
 Rosey offers a workflow to translate content in HTML attributes, beyond only the HTML element content.
 
 ## Tagging attributes
 
 Use the `data-rosey-attrs` attribute to translate HTML attributes on an element that already has a `data-rosey` tag. Multiple attributes can be translated by comma separation:
 
-{{< diffcode >}}
-```html
+{{<diffcode>}}```html
 <!DOCTYPE html>
 <html>
     <body>
@@ -23,8 +23,7 @@ Use the `data-rosey-attrs` attribute to translate HTML attributes on an element 
         >Hello!</h1>
     </body>
 </html>
-```
-{{< /diffcode >}}
+```{{</diffcode>}}
 
 The name of the attribute will be appended to the `data-rosey` key with a period, thus the above example will produce the output translation keys:
 
@@ -40,8 +39,7 @@ The name of the attribute will be appended to the `data-rosey` key with a period
 
 If you want to define a custom translation key, or want to tag an attribute on an element that is otherwise not translated, use the `data-rosey-attrs-explicit` attribute. This expects a JSON object of `<attribute>: <translation key>` pairs:
 
-{{< diffcode >}}
-```html
+{{<diffcode>}}```html
 <!DOCTYPE html>
 <html>
     <body>
@@ -53,8 +51,7 @@ If you want to define a custom translation key, or want to tag an attribute on a
         <h1 data-rosey="title">Hello!</h1>
     </body>
 </html>
-```
-{{< /diffcode >}}
+```{{</diffcode>}}
 
 The above example will produce the output translation keys:
 

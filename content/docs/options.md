@@ -1,10 +1,11 @@
 ---
-title: "Configuring Rosey"
-nav_title: "Configuring Rosey"
+_schema: default
+title: Configuring Rosey
+nav_title: Configuring Rosey
 nav_section: Rosey CLI
 weight: 10
+draft: false
 ---
-
 Rosey can be configured through CLI flags, environment variables, or configuration files. Values will be merged from all sources, with CLI flags overriding environment variables, and environment variables overriding configuration files.
 
 ## Config files
@@ -23,7 +24,7 @@ npx rosey
 
 ## Environment variables
 
-Rosey will load any values via a ROSEY_* environment variable.
+Rosey will load any values via a ROSEY\_\* environment variable.
 
 ```bash
 export ROSEY_DEST="_site_translated"
@@ -42,10 +43,4 @@ npx rosey --source _site --dest _site_translated
 
 See the documentation for each Rosey subcommand for the available options. Some CLI flags are always available:
 
-| CLI Flag                         | Description                                             |
-|----------------------------------|---------------------------------------------------------|
-| `-V, --version`                  | Print the version of the Rosey package                  |
-| `-h, --help`                     | Print general help information                          |
-| `<command> -h, <command> --help` | Print help information about a subcommand               |
-| `<command> --config-dump`        | Print the config as sourced from all sources, then exit |
-| `<command> --verbose`            | Print verbose logs while running the Rosey CLI          |
+<table><thead><tr><th>CLI Flag</th><th>Description</th></tr></thead><tbody><tr><td><code>-V, --version</code></td><td>Print the version of the Rosey package</td></tr><tr><td><code>-h, --help</code></td><td>Print general help information</td></tr><tr><td><code>&lt;command&gt; -h, &lt;command&gt; --help</code></td><td>Print help information about a subcommand</td></tr><tr><td><code>&lt;command&gt; --config-dump</code></td><td>Print the config as sourced from all sources, then exit</td></tr><tr><td><code>&lt;command&gt; --verbose</code></td><td>Print verbose logs while running the Rosey CLI</td></tr></tbody></table>
