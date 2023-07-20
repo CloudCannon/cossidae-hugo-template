@@ -98,7 +98,8 @@ Values tagged with `rosey-ns` can also be translated by adding a `rosey` attribu
 
 `titles.rosey.json`\:
 
-{{<diffcode>}}```json
+{{<diffcode>}}
+```json
 {
     "myCollection": [
         {
@@ -109,18 +110,21 @@ Values tagged with `rosey-ns` can also be translated by adding a `rosey` attribu
         }
     ]
 }
-```{{</diffcode>}}
+```
+{{</diffcode>}}
 
 Output translation keys:
 
-{{<diffcode>}}```json
+{{<diffcode>}}
+```json
 {
 +  "john.name": "John",
   "john.description": "John description",
 +  "mark.name": "Mark",
   "mark.description": "Mark description"
 }
-```{{</diffcode>}}
+```
+{{</diffcode>}}
 
 ## Translating JSON Arrays
 

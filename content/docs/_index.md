@@ -14,7 +14,8 @@ For this guide we'll work through a single example: translating the page title o
 
 Our simple site has a single index page, which is configured to use a `home` layout. In our home layout, we'll tag each instance of our title with a `data-rosey` attribute.
 
-{{<diffcode>}}```html
+{{<diffcode>}}
+```html
 ---
 # _includes/layouts/home.liquid
 ---
@@ -33,7 +34,8 @@ Our simple site has a single index page, which is configured to use a `home` lay
     <section>
   </body>
 </html>
-```{{</diffcode>}}
+```
+{{</diffcode>}}
 
 The `data-rosey` attribute expects to be passed a key for the given translation. In this case, both of these elements contain the same text, so we can share the `title` translation key.
 
