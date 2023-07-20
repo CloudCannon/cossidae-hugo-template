@@ -8,6 +8,21 @@ draft: false
 ---
 Rosey supports translation of JSON files using a schema file to determine the attributes to be translated.
 
+{{<diffcode>}}
+```json
+{
+    "myCollection": [
+        {
++            "name": "rosey-ns|rosey:name",
+            "details": {
+                "description": "rosey:description"
+            }
+        }
+    ]
+}
+```
+{{</diffcode>}}
+
 A Rosey schema file must live in the same folder as the original JSON file and should follow naming conventions of `<originalFileName>.rosey.json` — for example, to translate a file called `titles.json`, the schema should be named `titles.rosey.json`.
 
 ## Tagging JSON values
@@ -99,7 +114,8 @@ Values tagged with `rosey-ns` can also be translated by adding a `rosey` attribu
 `titles.rosey.json`\:
 
 {{<diffcode>}}
-```json
+```
+json
 {
     "myCollection": [
         {
@@ -116,7 +132,8 @@ Values tagged with `rosey-ns` can also be translated by adding a `rosey` attribu
 Output translation keys:
 
 {{<diffcode>}}
-```json
+```
+json
 {
 +  "john.name": "John",
   "john.description": "John description",
