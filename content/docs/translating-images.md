@@ -9,12 +9,7 @@ Rosey can replace images within blocks of translated HTML using translated image
 
 ​​​​​
 
-{{<diffcode>}}```html
-+<div data-rosey="content">
-    <p>Hello!</p>
-    <img src='/assets/hello.png' />
-</div>
-```{{</diffcode>}}
+​​​​​
 
 When Rosey encounters an asset inside a block of translated HTML, it will check for a language-specific image alongside the original, and rewrite the URL if one is found. For a given \`image.png\`, Rosey will check for an \`image.&lt;language&gt;.png\` file to use in its place.
 
