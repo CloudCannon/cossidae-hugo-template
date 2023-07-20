@@ -22,14 +22,15 @@ When Rosey encounters an asset inside a block of translated HTML, it will check 
 
 First, an element wrapping the image must be tagged with a \`data-rosey\` attribute:
 
-{{< diffcode >}}
-```html
+{{<diffcode>}}
+```
+html
 +<div data-rosey="content">
     <p>Hello!</p>
     <img src='/assets/hello.png' />
 </div>
 ```
-{{< /diffcode >}}
+{{</diffcode>}}
 
 Producing the \`source.json\` file:
 
