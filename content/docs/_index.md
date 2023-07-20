@@ -1,10 +1,11 @@
 ---
-title: "Getting Started"
-nav_title: "Getting Started"
+_schema: default
+title: Getting Started
+nav_title: Getting Started
 nav_section: Root
 weight: 2
+draft: false
 ---
-
 The majority of Rosey configuration happens in your static HTML, which is read and transformed by Rosey. In most places, configuration values are in the form of `data-rosey*` attributes placed on your elements.
 
 ## Tagging your first layout
@@ -13,8 +14,7 @@ For this guide we'll work through a single example: translating the page title o
 
 Our simple site has a single index page, which is configured to use a `home` layout. In our home layout, we'll tag each instance of our title with a `data-rosey` attribute.
 
-{{< diffcode >}}
-```html
+{{<diffcode>}}```html
 ---
 # _includes/layouts/home.liquid
 ---
@@ -33,8 +33,7 @@ Our simple site has a single index page, which is configured to use a `home` lay
     <section>
   </body>
 </html>
-```
-{{< /diffcode >}}
+```{{</diffcode>}}
 
 The `data-rosey` attribute expects to be passed a key for the given translation. In this case, both of these elements contain the same text, so we can share the `title` translation key.
 
@@ -63,7 +62,7 @@ With our built static site on hand, we can now start running Rosey. The easiest 
 
 Rosey's `generate` command is our starting point, which will generate our base translation file. For our simple Eleventy site, we should now have the following directory structure after running our site build:
 
-{{< tree >}}
+{{<tree>}}
 .eleventy.js
 package.json
 _includes/
@@ -72,7 +71,7 @@ _includes/
 +_site/
 +>> index.html
 index.liquid
-{{< /tree >}}
+{{</tree>}}
 
 With our built static files in the `_site` folder, we can run the generate command:
 
@@ -82,7 +81,7 @@ npx rosey generate --source _site
 
 Rosey will read the static HTML and extract any elements that have been tagged for translation. We now see a new file in our project:
 
-{{< tree >}}
+{{<tree>}}
 .eleventy.js
 package.json
 _includes/
@@ -93,7 +92,7 @@ _site/
 index.liquid
 +rosey/
 +>> base.json
-{{< /tree >}}
+{{</tree>}}
 
 This `base.json` file contains all text that needs to be translated. For the layout we tagged above, this will look like the following:
 
@@ -116,9 +115,9 @@ For now, all we need to look at is the `original` value of our key. The other va
 
 ## Creating locale files
 
-The next step from Rosey's point of view is building a multilingual website, but in order to do so we need translated content. Rosey expects translated content to exist in the `rosey/locales` folder, so to create a localized version of your site in Korean a file should be created at `rosey/locales/ko-kr.json`:
+The next step from Rosey's point of view is building a multilingual website, but in order to do so we need translated content. Rosey expects translated content to exist in the `rosey/locales` folder, so to create a localized version of your site in Korean a file should be created at `rosey/locales/ko-kr.json`\:
 
-{{< tree >}}
+{{<tree>}}
 .eleventy.js
 package.json
 _includes/
@@ -131,7 +130,7 @@ rosey/
 +>> locales/
 +>  >> ko-kr.json
 >> base.json
-{{< /tree >}}
+{{</tree>}}
 
 This file should contain translation keys, each containing the original and translated text. For our `base.json` above, our `ko-kr.json` locale file will look like:
 
@@ -150,9 +149,9 @@ Creating these locale files is currently out of Rosey's scope. For smaller use-c
 
 ## Building the multilingual site
 
-For our running example, we'll assume we have created translated locale files for `no` and `ko-kr`:
+For our running example, we'll assume we have created translated locale files for `no` and `ko-kr`\:
 
-{{< tree >}}
+{{<tree>}}
 .eleventy.js
 package.json
 _includes/
@@ -166,7 +165,7 @@ rosey/
 +>  >> ko-kr.json
 +>  >> no.json
 >> base.json
-{{< /tree >}}
+{{</tree>}}
 
 With these newly-created files in place, let's run the `build` subcommand:
 
@@ -176,7 +175,7 @@ npx rosey build --source _site
 
 We will now see a new translated copy of our static site alongside our original built directory:
 
-{{< tree >}}
+{{<tree>}}
 .eleventy.js
 package.json
 _includes/
@@ -198,9 +197,9 @@ rosey/
 >  >> ko-kr.json
 >  >> no.json
 >> base.json
-{{< /tree >}}
+{{</tree>}}
 
-At a glance we can see that Rosey has created a subdirectory for each of our languages. Peeking inside `_site_translated/ko-kr/index.html`:
+At a glance we can see that Rosey has created a subdirectory for each of our languages. Peeking inside `_site_translated/ko-kr/index.html`\:
 
 ```html
 <!doctype html>
