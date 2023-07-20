@@ -286,119 +286,119 @@ _inputs:
   text: 
     type: color
     label: Primary text
-    comment: "main text color. defaults: light - #000, dark - #DBDBDB"
+    comment: Main text color
   flip-text:
     type: color
-    comment: "text color for dark backgrounds - e.g. banner. defaults: light - #fff, dark - #DBDBDB"
+    comment: Text color for dark backgrounds
   highlight: 
     type: color
     label: Highlighted text
-    comment: "text color for highlighted text. defaults: light - #de935f, dark - #de935f"
+    comment: Text color for highlighted text.
   body-bg-color: 
     type: color
-    comment: "main body background color. defaults: light - #fff, dark - #121516"
+    comment: Main body background color.
   code-element: 
     type: color
     label: HTML element tags
-    comment: "text color for codeblock html element tags. defaults: light - #b294bb, dark - #b294bb"
+    comment: Next color for codeblock html element tags. 
   code-attribute:
     type: color
     label: HTML attributes
-    comment: "text color for codeblock html attributes. defaults: light - #8abeb7, dark - #8abeb7"
+    comment: Text color for codeblock html attributes.
   code-bool:
     type: color
     label: Boolean values
-    comment: "text color for codeblock boolean values. defaults: light - #ee6868, dark - #ee6868"
+    comment: Text color for codeblock boolean values.
   code-params:
     type: color
     label: Function/HTML parameters
-    comment: "text color for codeblock function/html parameters. defaults: light - #de935f, dark - #de935f"
+    comment: Text color for codeblock function/html parameters.
   code-values: 
     type: color
     label: Key values
-    comment: "text color for codeblock key values. defaults: light - #b5bd68, dark - #b5bd68"
+    comment: Text color for codeblock key values.
   background-body: 
     type: color
-    comment: "main body background color. defaults: light - #fff, dark - #121516"
+    comment: Main body background color.
   background: 
     type: color
-    comment: "background color for main content area. defaults: light - #efefef, dark - #1d1f21"
+    comment: Background color for main content area. 
   background-alt: 
     type: color
-    comment: "background color for alternate content area. defaults: light - #f7f7f7, dark - #080808"
+    comment: Background color for alternate content area.
   selection: 
     type: color
-    comment: "selected text background color. defaults: light - #9e9e9e, dark - #616161"
+    comment: Selected text background color. 
   text-main:
     type: color
-    comment: "main text color. defaults: light - #363636, dark - #DBDBDB"
+    comment: Main text color. 
   text-bright: 
     type: color
-    comment: "text color for bright text. defaults: light - #000, dark - #fff"
+    comment: Text color for bright text.
   text-muted: 
     type: color
-    comment: "text color for muted text. defaults: light - #70777f, dark - #c8c8c8"
+    comment: Text color for muted text.
   links: 
     type: color
-    comment: "text color for links. defaults: light - #0076d1, dark - #de935f"
+    comment: Text color for links. 
   focus: 
     type: color
-    comment: "focus color for links. defaults: light - #0096bfab, dark - #ff4d4d"
+    comment: Focus color for links. 
   border:
     type: color
-    comment: "border color for elements. defaults: light - #dbdbdb, dark - #ffffff"
+    comment: Border color for elements.
   code: 
     type: color
     label: Codeblock text color
-    comment: "text color for codeblock text. defaults: light - #000, dark - #fff"
+    comment: Text color for codeblock text. 
   button-base: 
     type: color
-    comment: "background color for buttons. defaults: light - #d0cfcf, dark - #2b2b2b"
+    comment: Background color for buttons.
   button-hover: 
     type: color
-    comment: "background color for buttons on hover. defaults: light - #9b9b9b, dark - #606060"
+    comment: Background color for buttons on hover.
   scrollbar-thumb: 
     type: color
-    comment: "scrollbar thumb color. defaults: light - #aaaaaa, dark - #555555"
+    comment: Scrollbar thumb color.
   scrollbar-thumb-hover:
     type: color
-    comment: "scrollbar thumb color on hover. defaults: light - #9b9b9b, dark - #606060"
+    comment: Scrollbar thumb color on hover. 
   form-placeholder: 
     type: color
-    comment: "placeholder text color for form inputs. defaults: light - #949494, dark - #e0e0e0"
+    comment: Placeholder text color for form inputs. 
   form-text:
     type: color
-    comment: "text color for form inputs. defaults: light - #1d1d1d, dark - #f0f0f0"
+    comment: Text color for form inputs.
   variable:
     type: color
-    comment: "text color for codeblock variable names. defaults: light - #39a33c, dark - #c85f5f"
+    comment: Text color for codeblock variable names.
   diffcode-added: 
     type: color
     options:
       format: hex
       alpha: true
-    comment: "background color for added lines in diffcode shortcode. defaults: light - #003506, dark - #003506"
+    comment: Background color for added lines in diffcode shortcode.
   diffcode-removed: 
     type: color
     options:
       format: hex
       alpha: true
-    comment: "background color for removed lines in diffcode shortcode. defaults: light - #350000, dark - #350000"
+    comment: Background color for removed lines in diffcode shortcode.
   pagefind-ui-primary:
     type: color
-    comment: "primary color for pagefind ui. defaults: light - #000, dark - #D8D8D8"
+    comment: Primary color for pagefind ui. 
   pagefind-ui-secondary:
     type: color
-    comment: "secondary color for pagefind ui. defaults: light - #000, dark - #D8D8D8"
+    comment: Secondary color for pagefind ui. 
   pagefind-ui-background:
     type: color
-    comment: "background color for pagefind ui. defaults: light - #efefef, dark - #1d1f21"
+    comment: Background color for pagefind ui. 
   pagefind-ui-border:
     type: color
-    comment: "border color for pagefind ui. defaults: light - #efefef, dark - #D8D8D8"
+    comment: Border color for pagefind ui.
   pagefind-ui-tag:
     type: color
-    comment: "tag color for pagefind ui. defaults: light - #efefef, dark - #1d1f21"
+    comment: Tag color for pagefind ui.
   small_icon:
     type: image
     comment: Dimensions - 16px x 16px
@@ -431,29 +431,31 @@ _inputs:
 
 _snippets:
   diffcode:
-    snippet: "{{<diffcode>}}\n```[[lang]][[inner]]```\n{{</diffcode>}}"
+    snippet: "<comp.CodeBlock>\n```[[lang]][[inner]]```\n</comp.CodeBlock>"
     params: 
       lang:
         parser: argument
         options:
           editor_key: language
+          allow_leading: true
           forbidden_tokens: ["```"]
-          style:
-            output: inline 
-          model:
-            editor_key: language
-            optional: true
+
       inner:
         parser: content
         options:  
           editor_key: inner_code
+          allow_leading: true
+          raw: true
           style:
-            output: block
             block:
               leading: "\n"
               trailing: "\n"
               indent: ""
     inline: false
+    definitions:
+      shortcode_name: diffcode
+      content_key: inner_code
+      named_args: 
     preview:
       text: Diffcode
       subtext: Difference formatter
@@ -465,8 +467,6 @@ _snippets:
     _inputs:
       inner_code:
         type: code
-      language:
-        type: text
   tree:
     snippet: "{{<tree>}}[[inner]]{{</tree>}}"
     params: 
@@ -474,8 +474,10 @@ _snippets:
         parser: content
         options:  
           editor_key: inner_code
+          allow_leading: true
+          raw: true
+          forbidden_tokens: ["```"]
           style:
-            output: block
             block:
               leading: "\n"
               trailing: "\n"
