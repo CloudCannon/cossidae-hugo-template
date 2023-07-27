@@ -1,6 +1,6 @@
 ---
 _schema: default
-title: Alto
+title: Welcome 👋
 nav_title: Home
 SEO_options:
   title:
