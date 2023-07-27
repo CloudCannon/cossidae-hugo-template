@@ -74,7 +74,7 @@ colors:
     scrollbar_colors:
       scrollbar-thumb: '#555555'
     border_colors:
-      border: '#ffffff'
+      border: '#dbdbdb'
     focus_colors:
       focus: '#ff4d4d'
     shortcode_colors:
