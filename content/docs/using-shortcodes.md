@@ -1,6 +1,6 @@
 ---
 _schema: default
-title: Using Shortcodes in Alto
+title: Using Shortcodes
 nav_title: Using Shortcodes
 nav_section: Root
 weight: 2
