@@ -4,6 +4,8 @@ title: Cossidae Template
 summaryLength: 30
 disableKinds:
   - taxonomyTerm
+  - taxonomy 
+  - term
 markup:
   highlight:
     noClasses: false
