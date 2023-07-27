@@ -1,5 +1,5 @@
-project_name: Cossidae
-default_og_image: /og.png
+project_name: Alto Hugo theme
+default_og_image: /uploads/alto.png
 favicon:
   small_icon: /meta/favicon-16x16.png
   large_icon: /meta/favicon-32x32.png
