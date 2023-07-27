@@ -38,10 +38,10 @@ colors:
       diffcode-added: '#003506'
       diffcode-removed: '#350000'
     pagefind_colors:
-      pagefind-ui-primary: '#000'
-      pagefind-ui-secondary: '#000'
+      pagefind-ui-primary: '#000000'
+      pagefind-ui-secondary: '#000000'
       pagefind-ui-background: '#efefef'
-      pagefind-ui-border: '#efefef'
+      pagefind-ui-border: '#dbdbdb'
       pagefind-ui-tag: '#efefef'
   dark:
     typography:
