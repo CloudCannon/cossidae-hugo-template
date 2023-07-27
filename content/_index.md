@@ -1,6 +1,7 @@
 ---
 _schema: default
 title: Alto
+nav_title: Home
 SEO_options:
   title:
   image:
