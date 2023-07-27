@@ -1,4 +1,4 @@
-html: '<p>Trying this out! Family: Cossidae; Leach, 1815</p>'
-id: cossidae
+html: <p>This banner is completely optional, and can be shown until a set date!</p>
+id: alto-banner
 show_until: 2023-07-20T07:28:00Z
 enable_banner: true
