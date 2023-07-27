@@ -1,3 +1,8 @@
+# RENAMED AND MOVED TO [Alto-Hugo-Template](https://github.com/CloudCannon/alto-hugo-template)
+
+
+
+
 # CloudCannon Open-Source Standard Info, Docs, and Education
 
 See the [cossidae-template](https://github.com/cloudcannon/cossidae-template) repo for a working example.
