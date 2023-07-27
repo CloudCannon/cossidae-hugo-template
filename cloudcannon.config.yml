@@ -208,6 +208,12 @@ _inputs:
     comment: choose between image or text based links
     options:
       structures: _structures.footer_link_structure
+  footer_width:
+    type: select
+    options:
+      values: 
+        - contain
+        - full
   logo_image:
     type: image
     comment: Default Display

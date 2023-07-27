@@ -1,3 +1,4 @@
+footer_width: contain
 footer_links:
   - url_path: https://cloudcannon.com/
     image_path: /images/cloudcannon.svg
