@@ -27,7 +27,7 @@ To get started with Alto, create a CloudCannon account and check out the [Gettin
 
 ## Showcase
 
-CloudCannon uses Alto as the template for our open-source tools. Take a look at these sample sites to see what's possible with static documentation on Alto:&nbsp;
+CloudCannon uses Alto as the documentation site template for our own open-source tools. Take a look at these sample sites to see what's possible with static documentation on Alto:&nbsp;
 
 * <a target="_blank" rel="noopener" href="https://pagefind.app/">Pagefind</a>
 * <a target="_blank" rel="noopener" href="https://rosey.app/">Rosey</a>
