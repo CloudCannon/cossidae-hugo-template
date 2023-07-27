@@ -1,17 +1,31 @@
 ---
-title: "Base Locale File"
-nav_title: "Base Locale File"
-nav_section: Workflow
-weight: 4
+_schema: default
+title: Using Snippets
+nav_title: Using Snippets in Alto
+nav_section: Root
+weight: 2
+draft: false
 ---
+Alto comes with twelve pre-configured Snippets for a range of common documentation requirements:
 
-The Rosey base locale file contains the original text of your website, as derived from the `data-rosey` tags found in your HTML.
+* Summary divider
+* Code blocks with syntax highlighting
+* Figure
+* GitHub Gist embed
+* Front matter parameter
+* Reference
+* Relative reference
+* Tweet embed
+* Vimeo embed
+* YouTube embed
+* Diffcode formatter
+* Tree diagram formatter
 
-## Generating the base locale file
+To use a Snippet within CloudCannon, click the 'Snippet' button in the Content Editor, and set your parameters.
 
-After [tagging your site](/docs/translating-elements), Rosey's [generate command](/docs/generate) will create the base locale file. See the [getting started](/docs/#generating-the-source-translation-file) guide for a more in depth explanation of this process.
+## Adding your own Snippets
 
-By default, this file will have been generated at `rosey/base.json` relative to the directory you ran Rosey in.
+In order to&nbsp;
 
 ## Base locale file structure
 
