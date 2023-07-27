@@ -6,15 +6,21 @@ nav_section: Root
 weight: 2
 draft: false
 ---
-The majority of Rosey configuration happens in your static HTML, which is read and transformed by Rosey. In most places, configuration values are in the form of `data-rosey*` attributes placed on your elements.
+To create a new Alto site and deploy it immediately to CloudCannon, click here.
 
-## Tagging your first layout
+## Creating new site pages
 
-For this guide we'll work through a single example: translating the page title on the homepage of an Eleventy site. The concepts apply to any static site generator, so adjust the files you're editing to match your workflow.
+For this guide we'll work through a single example: creating a new page on Alto within CloudCannon, and ensuring it's shown in the correct place in your navigation bar.&nbsp;
+
+
+
+
+
+homepage of an Eleventy site. The concepts apply to any static site generator, so adjust the files you're editing to match your workflow.
 
 Our simple site has a single index page, which is configured to use a `home` layout. In our home layout, we'll tag each instance of our title with a `data-rosey` attribute.
 
-{{<diffcode>}}
+{{< diffcode >}}
 ```html
 ---
 # _includes/layouts/home.liquid
@@ -35,7 +41,7 @@ Our simple site has a single index page, which is configured to use a `home` lay
   </body>
 </html>
 ```
-{{</diffcode>}}
+{{< /diffcode >}}
 
 The `data-rosey` attribute expects to be passed a key for the given translation. In this case, both of these elements contain the same text, so we can share the `title` translation key.
 
