@@ -1,72 +1,16 @@
 ---
-title: Translating Images
-nav_title: Translating Images
-nav_section: Tagging
-weight: 6
+title: Configuring theme colors
+nav_title: Configuring theme colors
+nav_section: Customizing Alto
+weight: 2
 _schema: docs
 ---
-Rosey can replace images within blocks of translated HTML using translated images, using a filename convention.
+Alto has a flexible color palette in both light and dark modes, which can also apply to the embedded Pagefind search tool.&nbsp;
 
-{{<diffcode>}}
-```html
-+<div data-rosey="content">
-    <p>Hello!</p>
-    <img src='/assets/hello.png' />
-</div>
-```
-{{</diffcode>}}
+## Changing theme colors
 
-​​
+Navigate to **Site Settings &gt; Theme Palette**, and select Light or Dark mode.
 
-When Rosey encounters an asset inside a block of translated HTML, it will check for a language-specific image alongside the original, and rewrite the URL if one is found. For a given \`image.png\`, Rosey will check for an \`image.&lt;language&gt;.png\` file to use in its place.
+{{< figure src="/uploads/screenshot-2023-07-27-at-1-30-04-pm.png" >}}
 
-First, an element wrapping the image must be tagged with a \`data-rosey\` attribute:
-
-{{<diffcode>}}
-```html
-+<div data-rosey="content">
-    <p>Hello!</p>
-    <img src='/assets/hello.png' />
-</div>
-```
-{{</diffcode>}}
-
-Producing the \`source.json\` file:
-
-{{< highlight "json" >}}{
-    "version": 2,
-    "keys": {
-        "content": {
-            "original": "<p>Hello!</p>\n<img src='/assets/hello.png' />",
-            "pages": {
-                "index.html": 1
-            },
-            "total": 1
-        }
-    }
-}{{< /highlight >}}
-
-When translating this file into your given locale, the image URL does not need to be altered. After translating your keys into a \`rosey/locales/fr.json\` file, you should have something along the lines of:
-
-{{< highlight "json" >}}{
-    "content": {
-        "original": "<p>Hello!</p>\n<img src='/assets/hello.png' />",
-    	"value": "<p>Bonjour!</p>\n<img src='/assets/hello.png' />"
-    }
-}{{< /highlight >}}
-
-Now before building your multilingual site with Rosey, add an asset matching the language code alongside the original asset:
-
-{{<tree>}}
-_site
->> assets
-   >> hello.png
-+   >> hello.fr.png
-{{</tree>}}
-
-Now after running \`rosey build\`, you should see the following final output on a \`fr\` page:
-
-{{< highlight "html" >}}<div data-rosey="content">
-    <p>Bonjour!</p>
-    <img src='/assets/hello.fr.png' />
-</div>{{< /highlight >}}
+Here, you can set hex colors for your text, background, code blocks, buttons, scrollbars, borders, focus, shortcodes, and for Pagefind.
