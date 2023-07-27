@@ -1,7 +1,7 @@
 ---
 _schema: default
-title: Configure Nav / Footer
-nav_title: Configure Nav / Footer
+title: Configure the navigation and footer
+nav_title: Configure the navigation and footer
 nav_section: Customizing Alto
 weight: 1
 draft: false
